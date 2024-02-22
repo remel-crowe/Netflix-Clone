@@ -2,6 +2,7 @@ import Banner from "./components/banner/Banner";
 import Nav from "./components/navbar/Nav";
 import Row from "./components/row/Row";
 import requests from "./requests";
+import "./Homescreen.scss";
 
 function HomeScreen() {
   return (
@@ -10,7 +11,7 @@ function HomeScreen() {
       <Nav />
       {/* Banner */}
       <Banner />
-
+      {/* Row */}
       <Row
         title="Trending Now"
         fetchUrl={requests.fetchNetflixOriginals}
@@ -23,7 +24,7 @@ function HomeScreen() {
       <Row title="Horror" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
 
-      {/* Row */}
+      {/* Footer */}
     </div>
   );
 }

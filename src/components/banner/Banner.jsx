@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Banner.scss";
 import axios from "../../axios";
 import requests from "../../requests";
+import { FaPlay } from "react-icons/fa";
+import { MdOutlineReplay } from "react-icons/md";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -39,11 +42,17 @@ function Banner() {
         </h2>
         <div className="banner_buttons">
           <div className="left_buttons">
-            <button className="banner_button play_button">Play</button>
-            <button className="banner_button more_button">More Info</button>
+            <button className="banner_button play_button">
+              <FaPlay />
+              <p>Play</p>
+            </button>
+            <button className="banner_button more_button">
+              <IoIosInformationCircleOutline />
+              <p>More info</p>
+            </button>
           </div>
           <div className="right_buttons">
-            <button className="banner_button replay_button">Icon</button>
+            <MdOutlineReplay className="replay_button" />
           </div>
         </div>
       </div>
