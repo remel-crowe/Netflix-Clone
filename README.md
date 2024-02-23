@@ -43,6 +43,7 @@ A Netflix clone built using React and Sass. This project utilizes The Movie Data
 ## Usage
 
 - Browse through categories of movies on the homepage.
+- Search for movies by title
 - Click on a movie poster to view more details about the selected movie
 
 
