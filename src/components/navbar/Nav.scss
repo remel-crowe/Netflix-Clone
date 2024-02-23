@@ -43,3 +43,45 @@
     border-radius: 2px;
     cursor: pointer;
 }
+
+.nav_headers{
+    display: flex;
+    position: fixed;
+    left: 220px;
+    top:27px;
+    gap: 20px;
+    
+    li{
+        list-style: none;
+        font-size: 14px;
+        font-family: 'Netflix Sans';
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        &:hover{
+            color: rgba(187, 187, 187, 0.7);
+        }
+        &:focus{
+            color: white;
+        }
+    }
+}
+
+input{
+    position: fixed;
+    right: 70px;
+    top: 15px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid white;
+    padding: 8px 8px;
+    width: 13vw;
+    color: white;
+    font-family: 'Netflix Sans';
+    font-size: 13px;
+    border-radius: 3px;
+    
+
+    &:focus{
+        outline: none;
+    }
+
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.scss";
 
-function Nav() {
+function Nav({ search, setSearch }) {
   const [show, handleShow] = useState(false);
 
   const showNavbar = () => {
@@ -23,6 +23,20 @@ function Nav() {
           className="nav_logo"
           src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
           alt="Netflix Logo"
+        />
+
+        <ul className="nav_headers">
+          <li>Series</li>
+          <li>Movies</li>
+          <li>New & Popular</li>
+        </ul>
+
+        <input
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+          placeholder="Titles, people, genres"
         />
 
         <img
