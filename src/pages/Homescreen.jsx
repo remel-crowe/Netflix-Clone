@@ -1,10 +1,9 @@
-import Banner from "./components/banner/Banner";
-import Nav from "./components/navbar/Nav";
-import Row from "./components/row/Row";
-import requests from "./requests";
+import Banner from "../components/banner/Banner";
+import Nav from "../components/navbar/Nav";
+import Row from "../components/row/Row";
+import requests from "../requests";
 import "./Homescreen.scss";
 import { useEffect, useState } from "react";
-const API_KEY = "0369d1ff8388d53c050ba9b87ad86732";
 
 function HomeScreen() {
   const [search, setSearch] = useState("");
