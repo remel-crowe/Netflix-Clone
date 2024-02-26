@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./Nav.scss";
 
-function Nav({ search, setSearch }) {
+import "./Nav.scss";
+import { Navigate, useNavigate } from "react-router-dom";
+
+function Nav({ showSearch = true, showHeaders = true, search, setSearch }) {
   const [show, handleShow] = useState(false);
+  const navigate = useNavigate();
 
   const showNavbar = () => {
     if (window.scrollY > 100) {
@@ -23,26 +26,33 @@ function Nav({ search, setSearch }) {
           className="nav_logo"
           src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
           alt="Netflix Logo"
-        />
-
-        <ul className="nav_headers">
-          <li>Series</li>
-          <li>Movies</li>
-          <li>New & Popular</li>
-        </ul>
-
-        <input
-          value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
+          onClick={() => {
+            navigate("/");
           }}
-          placeholder="Titles, people, genres"
         />
+
+        {showHeaders && (
+          <ul className="nav_headers">
+            <li>Series</li>
+            <li>Movies</li>
+            <li>New & Popular</li>
+          </ul>
+        )}
+        {showSearch && (
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Titles, people, genres"
+          />
+        )}
 
         <img
           className="nav_avatar"
           src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg"
           alt="Netflix Avatar"
+          onClick={() => {
+            navigate("/profile");
+          }}
         />
       </div>
     </div>

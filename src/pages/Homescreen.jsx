@@ -1,4 +1,5 @@
 import Banner from "../components/banner/Banner";
+import Footer from "../components/footer/Footer";
 import Nav from "../components/navbar/Nav";
 import Row from "../components/row/Row";
 import requests from "../requests";
@@ -48,6 +49,7 @@ function HomeScreen() {
       )}
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 }
