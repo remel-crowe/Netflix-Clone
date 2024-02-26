@@ -9,12 +9,20 @@ import {
 function SignupScreen() {
   const signUpEmailRef = useRef(null);
   const signUpPasswordRef = useRef(null);
+  const signUpConfirmPasswordRef = useRef(null);
   const signInEmailRef = useRef(null);
   const signInPasswordRef = useRef(null);
   const [signUp, setSignUp] = useState(false);
+  const [error, setError] = useState("");
 
   const register = (e) => {
     e.preventDefault();
+    if (
+      signUpPasswordRef.current.value !== signUpConfirmPasswordRef.current.value
+    ) {
+      setError("Passwords do not match");
+      return;
+    }
     createUserWithEmailAndPassword(
       auth,
       signUpEmailRef.current.value,
@@ -22,7 +30,7 @@ function SignupScreen() {
     )
       .then((authUser) => {})
       .catch((error) => {
-        alert(error.code);
+        setError(error.code);
       });
   };
 
@@ -35,7 +43,7 @@ function SignupScreen() {
     )
       .then((authUser) => {})
       .catch((error) => {
-        alert(error.code);
+        setError(error.code);
       });
   };
 
@@ -57,12 +65,26 @@ function SignupScreen() {
               placeholder="Password"
               ref={signUpPasswordRef}
             />
+            <input
+              type="password"
+              className="password_input"
+              placeholder="Confirm Password"
+              ref={signUpConfirmPasswordRef}
+            />
+            {error && <p className="error_message">{error}!</p>}
             <button type="submit" className="form_button" onClick={register}>
               Sign Up
             </button>
             <h4>
-              Already have an account??{" "}
-              <a onClick={() => setSignUp(false)}>Sign in now.</a>
+              Already have an account?{" "}
+              <a
+                onClick={() => {
+                  setError("");
+                  setSignUp(false);
+                }}
+              >
+                Sign in now.
+              </a>
             </h4>
           </form>
         </div>
@@ -82,12 +104,20 @@ function SignupScreen() {
               placeholder="Password"
               ref={signInPasswordRef}
             />
+            {error && <p className="error_message">{error}</p>}
             <button type="submit" className="form_button" onClick={signIn}>
               Sign In
             </button>
             <h4>
               New to Netflix?{" "}
-              <a onClick={() => setSignUp(true)}>Sign up now.</a>
+              <a
+                onClick={() => {
+                  setError("");
+                  setSignUp(true);
+                }}
+              >
+                Sign up now.
+              </a>
             </h4>
           </form>
         </div>
