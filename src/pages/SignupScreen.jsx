@@ -27,11 +27,9 @@ function SignupScreen() {
       auth,
       signUpEmailRef.current.value,
       signUpPasswordRef.current.value
-    )
-      .then((authUser) => {})
-      .catch((error) => {
-        setError(error.code);
-      });
+    ).catch((error) => {
+      setError(error.code);
+    });
   };
 
   const signIn = (e) => {
@@ -40,11 +38,9 @@ function SignupScreen() {
       auth,
       signInEmailRef.current.value,
       signInPasswordRef.current.value
-    )
-      .then((authUser) => {})
-      .catch((error) => {
-        setError(error.code);
-      });
+    ).catch((error) => {
+      setError(error.code);
+    });
   };
 
   return (
