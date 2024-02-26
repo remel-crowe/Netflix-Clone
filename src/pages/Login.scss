@@ -57,19 +57,19 @@
 
 .login_contents {
     & > h1 {
-        font-size: 4vw;
+        font-size: 3rem;
         margin-bottom: 20px;
         width: 100vw;
     }
 
     & > h2 {
-        font-size: 2vw;
+        font-size: 2rem;
         font-weight: 300;
         margin-bottom: 20px;
     }
 
     & > h3 {
-        font-size: 1.5vw;
+        font-size: 1rem;
         font-weight: 300;
         margin-bottom: 20px;
     }
@@ -77,7 +77,7 @@
 
 .login_input form{
     & > input {
-        font-size: 1.2vw;
+        font-size: 1rem;
         padding: 5px 10px;
         outline-width: 1;
         height: 30px;
@@ -88,6 +88,7 @@
         border-radius: 4px;
         background-color: rgba(41, 41, 41, 0.4);
         color: white;
+        font-family: 'Montserrat';
         &::placeholder{
             color: rgba(255, 255, 255, 0.723)
         }
