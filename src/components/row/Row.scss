@@ -2,7 +2,7 @@
     position: relative;
     top: -45px;
     color: white;
-    font-family: 'Netflix Sans';
+    font-family: 'Netflix Sans', 'Montserrat';
     margin-left: 20px;
     margin-bottom: 40px;
     h1{
@@ -50,23 +50,22 @@
 }
 
 .movie_title {
-    position: absolute; /* Position the movie title absolutely within the image container */
-    bottom: 10px; /* Position the movie title at the bottom of the image */
-    left: 0; /* Align the movie title to the left of the image */
-    width: 95%; /* Ensure the movie title spans the entire width of the image container */
-    background-color: rgba(0, 0, 0, 0.048); /* Add a semi-transparent background to improve readability */
-    padding: 8px; /* Add padding to the movie title for better aesthetics */
-    color: white; /* Set the text color to white */
-    font-size: 16px; /* Adjust the font size as needed */
-    font-family: 'Netflix Sans';
-    font-weight: bold;
-    text-align: center; /* Center-align the movie title text */
+    position: absolute; 
+    bottom: 10px; 
+    left: 0;
+    width: 95%; 
+    background-color: rgba(0, 0, 0, 0.048); 
+    padding: 8px; 
+    color: white; 
+    font-size: 16px; 
+    font-weight: 400;
+    text-align: center; 
   }
 
 
 .row_posters.wrap {
-    display: grid; /* When wrap class is present, use grid to wrap items */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define grid columns with a minimum width of 150px */
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
     gap: 10px;
     padding-right: 10px;
 
