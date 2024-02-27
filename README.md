@@ -5,7 +5,7 @@ A Netflix clone built using React and Sass, utilising Redux and Firebase. This p
 ## Features
 
 - **Homepage**: Displays a selection of popular movies fetched from TMDb.
-- **Movie Details**: Clicking on a movie poster opens a modal with more details about the selected movie.
+- **Movie Details(Future Implementation)**: Clicking on a movie poster opens a modal with more details about the selected movie.
 - **Search**: Allows users to search for movies by title.
 - **Firebase Authentication**: Enables users to sign up and log in to the applicaton.
 
@@ -44,6 +44,6 @@ A Netflix clone built using React and Sass, utilising Redux and Firebase. This p
 
 - Browse through categories of movies on the homepage.
 - Search for movies by title
-- Click on a movie poster to view more details about the selected movie
+- Click on a movie poster to view more details about the selected movie (Future Implementation)
 
 
