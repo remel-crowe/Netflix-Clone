@@ -18,6 +18,8 @@ A Netflix clone built using React and Sass, utilising Redux and Firebase. This p
 
 ## Installation
 
+[Live Version](https://n-clone-remcrw.netlify.app)
+
 1. Clone the repository:
 
    ```bash
