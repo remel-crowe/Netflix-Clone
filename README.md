@@ -1,20 +1,20 @@
 # Netflix Clone
 
-A Netflix clone built using React and Sass. This project utilizes The Movie Database (TMDb) API to fetch movie data and aims to replicate the UI and functionality of the Netflix website.
+A Netflix clone built using React and Sass, utilising Redux and Firebase. This project utilizes The Movie Database (TMDb) API to fetch movie data and aims to replicate the UI and functionality of the Netflix website.
 
 ## Features
 
 - **Homepage**: Displays a selection of popular movies fetched from TMDb.
-- **Movie Details**: Clicking on a movie poster opens a modal with more details about the selected movie.
+- **Movie Details(Future Implementation)**: Clicking on a movie poster opens a modal with more details about the selected movie.
 - **Search**: Allows users to search for movies by title.
-- **Firebase Authentication (Future Implementation)**: Planned integration of Firebase authentication for user login and registration.
+- **Firebase Authentication**: Enables users to sign up and log in to the applicaton.
 
 ## Technologies Used
 
 - **React**: Frontend library for building user interfaces.
 - **Sass**: CSS preprocessor for styling.
 - **The Movie Database (TMDb) API**: Provides access to a vast collection of movie data.
-- **Firebase (Future Implementation)**: Backend service for user authentication.
+- **Firebase**: Backend service for user authentication.
 
 ## Installation
 
@@ -44,6 +44,6 @@ A Netflix clone built using React and Sass. This project utilizes The Movie Data
 
 - Browse through categories of movies on the homepage.
 - Search for movies by title
-- Click on a movie poster to view more details about the selected movie
+- Click on a movie poster to view more details about the selected movie (Future Implementation)
 
 
