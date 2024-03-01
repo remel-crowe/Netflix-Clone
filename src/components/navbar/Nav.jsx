@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-
 import "./Nav.scss";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Nav({ showSearch = true, showHeaders = true, search, setSearch }) {
   const [show, handleShow] = useState(false);

@@ -4,14 +4,12 @@
     background-size: cover;
 }
 
-
 .login_logo{
     position: fixed;
     left: 120px;
     width: 150px;
     top:30px
 }
-
 
 .login_button{
     position: fixed;
@@ -44,7 +42,6 @@
 .login_body{
     display: flex;
     flex-direction: column;
-    z-index: 1;
     color: white;
     font-family: 'Netflix Sans', 'Montserrat';
     position: absolute;
@@ -103,5 +100,35 @@
         color: white;
         border-radius: 5px;
     }
+}
+
+@media  screen and (max-width:600px) {
+    .login_logo{
+        left: 30px;
+    }
+    .login_button {
+        right: 20px;
+    }
+    .login_body {
+        top: 40%
+        
+    }
+
+    .login_contents{
+        & > h1 {
+            font-size: 2rem;
+        }
+
+        & > h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .login_input form {
+        input {
+            width: 200px;
+        }
+    }
+    
 }
     

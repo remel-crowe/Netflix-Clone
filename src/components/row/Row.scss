@@ -26,7 +26,7 @@
     position: relative;
     width: 100%;
     transition: transform 450ms;
-    img{
+     & > img{
         max-height: 200px;
         object-fit: contain;
         border-radius: 5px;
@@ -77,3 +77,54 @@
     }
 }
 
+
+
+@media screen and (max-width:600px) {
+    .row {
+        top: -65px;
+        & > h1 {
+            font-size: 1.2rem;
+        }
+
+        .row_poster {
+            img {
+                max-height: 150px;
+            }
+           
+        }
+
+        .row_posterLarge {
+            img {
+                max-height: 350px;
+            }
+        }
+
+
+        .row_posters.wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+           & >  .row_poster{
+            width: 120px;
+             & > img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+             }
+
+             & > p {
+                color: white;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.265);
+             }
+
+
+           }  
+        }
+
+
+
+    }
+    
+}

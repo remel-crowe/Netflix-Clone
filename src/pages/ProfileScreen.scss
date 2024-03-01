@@ -22,13 +22,10 @@
 }
 .profileScreen_info{
     display: flex;
-
-
     & > img {
         height: 100px;
     }
 }
-
 
 .profileScreen_user {
     margin-left: 25px;
@@ -43,4 +40,35 @@
         border: none;
         box-shadow: (0 2px 8px  rgba(255, 255, 255, 0.282));
     }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .profileScreen_body{
+        justify-content: center;
+        align-items: center;
+        margin-top: 30%;
+        &> h1 {
+            font-size: 2rem;
+        }
+    }
+
+
+    .profileScreen_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & > img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .profileScreen_user {
+        font-size: 0.8rem;
+    }
+    
 }

@@ -57,13 +57,26 @@
         font-weight: bold;
         color: white;
     }
-
 }
-
-
 .error_message {
     color: red;
 }
 
+
+
+@media screen and (max-width:600px){
+    .signin_screen, .signup_screen{
+       width: 60%
+    }
+
+    .signin_screen form, .signup_screen form{
+        & > input {
+            font-size: 1.2rem;
+        }
+     }
+
+
+    
+}
 
 

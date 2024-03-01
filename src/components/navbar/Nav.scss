@@ -4,7 +4,6 @@
     width: 100%;
     height: 68px;
     z-index: 1;
-
     transition-timing-function: ease-in;
     transition: all 0.5s;
 
@@ -15,7 +14,7 @@
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);;
 }
 
-.nav_contents {
+.nav_content {
     display: flex;
     justify-content: space-between;
 }
@@ -29,7 +28,6 @@
     height: 45px;
     object-fit: contain;
     padding-left: 30px;
-    
     cursor: pointer;
 }
 
@@ -84,4 +82,20 @@
         outline: none;
     }
 
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .nav_headers {
+        display: none;
+    }
+
+    .nav_content input {
+        width: 35%;
+    }
+
+    
+    
 }
