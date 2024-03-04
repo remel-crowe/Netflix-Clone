@@ -52,19 +52,19 @@ function SignupScreen() {
             <input
               type="email"
               className="email_input"
-              placeholder="Email or phone number"
+              placeholder="Use a fake emaiil here"
               ref={signUpEmailRef}
             />
             <input
               type="password"
               className="password_input"
-              placeholder="Password"
+              placeholder="Use a fake password here"
               ref={signUpPasswordRef}
             />
             <input
               type="password"
               className="password_input"
-              placeholder="Confirm Password"
+              placeholder="Use the fake password here too"
               ref={signUpConfirmPasswordRef}
             />
             {error && <p className="error_message">{error}!</p>}
@@ -91,13 +91,13 @@ function SignupScreen() {
             <input
               type="email"
               className="email_input"
-              placeholder="Email or phone number"
+              placeholder="Use a fake email here"
               ref={signInEmailRef}
             />
             <input
               type="password"
               className="password_input"
-              placeholder="Password"
+              placeholder="Use a fake password here"
               ref={signInPasswordRef}
             />
             {error && <p className="error_message">{error}</p>}
