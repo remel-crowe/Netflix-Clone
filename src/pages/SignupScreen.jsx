@@ -52,7 +52,7 @@ function SignupScreen() {
             <input
               type="email"
               className="email_input"
-              placeholder="Use a fake emaiil here"
+              placeholder="Use a fake email here"
               ref={signUpEmailRef}
             />
             <input
